@@ -1,55 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-us">
 
+<!-- CSS Stylesheets with Relative Paths -->
+
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <h1>Trevor Velez</h1>
 
-  <img src="headshot.jpg" alt="Headshot" />
-<br>
-  <p>Hello, my name is Trevor and I live in Lake Elsinore, California.</p>
-  <p>I am currently enrolled in UCI's Data Analytics Bootcamp .</p>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
 
-<h1>Socials</h1>
-<ul>
-  <li><a href="https://www.facebook.com/trevor.velez.1/" target="_blank">Facebook</a></li>
-  <li><a href="https://twitter.com/TrevorVelez2" target="_blank">Twitter</a></li>
-  <li><a href="https://www.instagram.com/trev_velez/" target="_blank">Instagram</a></li>
-  <li><a href="https://github.com/Trevor-Velez" target="_blank">Github</a></li>
-</ul>
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Trevor Velez</h2>
+        <img src="https://media-exp1.licdn.com/dms/image/C5603AQFXFH0_y6K47Q/profile-displayphoto-shrink_100_100/0/1622431373189?e=1634774400&v=beta&t=ftXZXE5M5FQbqHs2MssSMyQ0mKUGLuMoyiWrnJamyBo" alt="Headshot" />
+      </section>
+      <p>This is my first paragraph describing who I am</p>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th colspan="4">Favorite Things</th>
-    </tr>
-    <tr>
-      <th>Movies</th>
-      <th>Music</th>
-      <th>Sports</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Lone Survivor</td>
-      <td>Country</td>
-      <td>Baseball</td>
-    </tr>
-    <tr>
-      <td>Game of Thrones</td>
-      <td>Classic Rock</td>
-      <td>Hockey</td>
-    </tr>
-  </tbody>
-</table>
+    </section>
 
-<h2>Previous Bio Page</h2>
-<a href="http://127.0.0.1:5500/1/Activities/04-Stu_MyFirst_HTML/Unsolved/my-first.html" target="_blank">Previous Bio Page</a>
-
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:trevorvelez1993@gmail.com" target="_blank">trevorvelez1993@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/Trevor-Velez" target="_blank">Trevor-Velez</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
